@@ -1,6 +1,7 @@
 package ca.ualberta.cs.lonelytwitter;
 
 import java.util.ArrayList;
+import java.util.IllegalFormatCodePointException;
 
 public class TweetList {
     private ArrayList<Tweet> tweets = new ArrayList<Tweet>();

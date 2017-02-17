@@ -2,9 +2,7 @@ package ca.ualberta.cs.lonelytwitter;
 
 import android.test.ActivityInstrumentationTestCase2;
 
-/**
- * Created by makepeac on 9/29/16.
- */
+
 public class TweetListTest extends ActivityInstrumentationTestCase2 {
 
     public TweetListTest(){
@@ -18,7 +16,7 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
         assertTrue(tweets.hasTweet(tweet));
     }
 
-    public void testDelete(){
+    public void testDeleteTweet(){
         TweetList list = new TweetList();
         Tweet tweet = new NormalTweet("test");
         list.add(tweet);
@@ -39,5 +37,11 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
         Tweet tweet = new NormalTweet("test");
         list.add(tweet);
         assertTrue(list.hasTweet(tweet));
+
+
+    }
+    public void testStrings(){
+        assertEquals("'test' should be 'test'", "test", "test");
+        assertTrue("'test' should start with 't'", "test".startsWith("t"));
     }
 }
